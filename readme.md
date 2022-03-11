@@ -102,7 +102,7 @@ Change the `?username=` value to your GitHub's username.
 
 _Note: Available ranks are S+ (top 1%), S (top 25%), A++ (top 45%), A+ (top 60%), and B+ (everyone).
 The values are calculated by using the [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) using commits, contributions, issues, stars, pull requests, followers, and owned repositories.
-The implementation can be investigated at [src/calculateRank.js](./src/calculateRank.js)_
+The implementation can be investigated at [src/calculateRank.js](./src/calculateRank.js)._
 
 ### Hiding individual stats
 
@@ -252,7 +252,7 @@ Use [show_owner](#customization) variable to include the repo's owner username
 
 The top languages card show a GitHub user's most frequently used top language.
 
-_NOTE: Top Languages does not indicate my skill level or anything like that, it's a GitHub metric of which languages have the most code on GitHub. It's a new feature of github-readme-stats._
+_NOTE: Top Languages does not indicate my skill level or anything like that; it's a GitHub metric to determine which languages have the most code on GitHub. It's a new feature of github-readme-stats._
 
 ### Usage
 
@@ -415,9 +415,10 @@ NOTE: Since [#58](https://github.com/anuraghazra/github-readme-stats/pull/58) we
 1. Go back to your [Vercel dashboard](https://vercel.com/dashboard)
 1. Select `Import Project`
    ![](https://files.catbox.moe/qckos0.png)
-1. Select `Import Git Repository`
+1. Select `Import Git Repository`. Select root and keep everything as is.
    ![](https://files.catbox.moe/pqub9q.png)
-1. Select root and keep everything as is, just add your environment variable named PAT_1 (as shown), which will contain a personal access token (PAT), which you can easily create [here](https://github.com/settings/tokens/new) (leave everything as is, just name it something, it can be anything you want)
+1. Create a personal access token (PAT) [here](https://github.com/settings/tokens/new) and enable the `repo` permissions (this allows access to see private repo stats)
+1. Add the PAT as an environment variable named `PAT_1` (as shown).
    ![](https://files.catbox.moe/0ez4g7.png)
 1. Click deploy, and you're good to go. See your domains to use the API!
 
